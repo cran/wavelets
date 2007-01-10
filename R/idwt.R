@@ -46,7 +46,6 @@ idwt <- function(wt, fast=TRUE){
     X <- as.data.frame(X)
     attributes(X) <- wt@attr.X
   } else {
-browser()
     attributes(X) <- wt@attr.X
     class(X) <- wt@class.X
   }

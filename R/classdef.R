@@ -20,5 +20,7 @@ setClass("mra", representation(D="list", S="list", filter="wt.filter",
                                series="matrix", class.X="character",
                                attr.X="list", method="character"))
 
+#setMethod("plot", signature=(x="x", y="missing"), plot.dwt)
+
 #setMethod("print", signature(x="dwt"), function(x,...) print.dwt(x,...))
 #UseMethod("print", dwt)

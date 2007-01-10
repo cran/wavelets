@@ -7,7 +7,7 @@
   Plot DWT wavelet and scaling coefficients.
 }
 \usage{
-plot.dwt(x, levels = NULL, draw.boundary = FALSE, type = "stack",
+\method{plot}{dwt}(x, levels = NULL, draw.boundary = FALSE, type = "stack",
 col.plot = "black", col.boundary = "red", X.xtick.at = NULL, X.ytick.at
 = NULL, Stack.xtick.at = NULL, Stack.ytick.at = NULL, X.xlab = "t",
 y.rlabs = TRUE, plot.X = TRUE, plot.W = TRUE, plot.V = TRUE, ...)
