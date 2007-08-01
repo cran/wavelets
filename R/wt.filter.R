@@ -89,9 +89,10 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
              0.0328830116666778,
              -0.0105974017850021
              )
-      if(modwt == TRUE) g <- g/sqrt(2)
       h <- wt.filter.qmf(g, inverse=TRUE)
-      return(L=L, h=h, g=g)
+      wt.filter <- new("wt.filter", L=L, h=h, g=g, wt.class=class,
+                       wt.name=name, transform=transform)
+      return(wt.filter)
     }
  
     d10.filter <- function(mod=F){

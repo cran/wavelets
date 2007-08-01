@@ -15,7 +15,7 @@ align <- function(wt, coe=FALSE, inverse=FALSE){
 
   # a function to align the wavelet and scaling coefficients
   align.coef <- function(wt.coef, wavelet, coe, modwt, inverse){
-    shift.coef <- sapply(1:J, function(j,coef,filter,wavelet,coe,modwt,inverse){
+    shift.coef <- lapply(1:J, function(j,coef,filter,wavelet,coe,modwt,inverse){
       shift <- wt.filter.shift(filter, j, wavelet, coe, modwt)
       N <- dim(coef[[j]])[1]
       if(shift >= N) shift <- shift - floor(shift/N)*N
