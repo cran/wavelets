@@ -11,11 +11,11 @@ wt.filter.shift <- function(filter, J, wavelet=TRUE, coe=FALSE, modwt=FALSE){
     filter <- wt.filter(filter, modwt=modwt)
   L <- filter@L
 
-  # calculate level 1 shift (equation 112e and page 124)
+  # calculate level 1 shift (equation 112e)
   if(!coe){
     if((filter@wt.class == "Daubechies") & !is.na(match(L, c(2,4)))){
-      if(L == 2) shift <- 2^(j-1)
-      if(L == 4) nu <- -1
+      if(L == 2) nu <- 0
+      if(L == 4) nu <- 1
     } else if(filter@wt.class == "Least Asymmetric"){
       if(!is.na(match(L,c(8,12,16,20)))) delta <- 1
       if(L == 10 | L == 18) delta <- 0
@@ -43,6 +43,12 @@ wt.filter.shift <- function(filter, J, wavelet=TRUE, coe=FALSE, modwt=FALSE){
         if(wavelet) shift <- L - nu - 1 else shift <- nu
       }
     }, wavelet=wavelet)
+  } else {
+    if(!modwt){
+      shift <- 0^J
+    } else {
+      shift <- 2^(J-1)
+    }
   }
 
   # calculate shift for dwt

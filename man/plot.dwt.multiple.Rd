@@ -7,7 +7,7 @@
   Plot wavelet and scaling coefficients of multiple DWT objects.  
 }
 \usage{
-plot.dwt.multiple(x, levels = NULL, ylim = NULL, draw.dashed.lines =
+\method{plot.dwt}{multiple}(x, levels = NULL, ylim = NULL, draw.dashed.lines =
 TRUE, draw.level.labels = TRUE, col = c("red","blue"), ...)
 }
 \arguments{

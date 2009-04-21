@@ -4,7 +4,10 @@ plot.dwt <- function (x, levels = NULL, draw.boundary = FALSE,
                       Stack.ytick.at = NULL, X.xlab = "t", y.rlabs = TRUE,
                       plot.X = TRUE, plot.W = TRUE, plot.V = TRUE, ...)
 {
-    stackplot.dwt <- function ( x , w.range, v.range, col.plot, col.boundary, draw.boundary = FALSE, X.xtick.at = NULL, X.ytick.at = NULL, Stack.xtick.at = NULL, Stack.ytick.at = NULL, X.xlab = "t", plot.X = TRUE)
+    stackplot.dwt <- function ( x , w.range, v.range, col.plot, col.boundary,
+                               draw.boundary = FALSE, X.xtick.at = NULL, X.ytick.at = NULL,
+                               Stack.xtick.at = NULL, Stack.ytick.at = NULL, X.xlab = "t",
+                               plot.X = TRUE)
     {
         innerplot <- function(x, y, type = "l", xtick.at, ytick.at)
         {

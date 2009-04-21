@@ -36,7 +36,7 @@ dwt <- function(X, filter="la8", n.levels, boundary="periodic", fast=TRUE){
   else if(!is.numeric(n.levels) | (round(n.levels) != n.levels))
     stop("Invalid argument value: 'n.levels' must be an integer value")
   else if(n.levels > log(N)/log(2))
-    stop(paste("Invalid argument value: 'n.levels' cannot be greater than ", log(N)/log(2), sep=""))
+    stop(paste("Invalid argument value: 'n.levels' cannot be greater than ", floor(log(N)/log(2)), sep=""))
   else J <- as.integer(n.levels)
 
   # reflect X for reflection method

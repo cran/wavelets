@@ -301,7 +301,7 @@ plot.modwt <- function( x , levels = NULL, draw.boundary = FALSE,
         }
         if(class(levels) == "list") {
             if(length(levels) < 1) {
-                w.range <- 1:dwt.object@level
+                w.range <- 1:x@level
                 v.range <- max(w.range)
             }
             if(length(levels) == 1) {

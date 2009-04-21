@@ -14,7 +14,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
                      wt.name="none", transform=transform)
   } else {
     # create 'wt.filter' object if character string is supplied
-    haar.filter <- function(mod=F){
+    haar.filter <- function(mod=FALSE){
       class <- "Daubechies"
       name <- "haar"
       L <- as.integer(2)
@@ -33,7 +33,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
     }
 
  
-    d4.filter <- function(mod=F){
+    d4.filter <- function(mod=FALSE){
       class <- "Daubechies"
       name <- "d4"
       L <- as.integer(4)
@@ -53,7 +53,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    d6.filter <- function(mod=F){
+    d6.filter <- function(mod=FALSE){
       class <- "Daubechies"
       name <- "d6"
       L <- as.integer(6)
@@ -75,7 +75,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    d8.filter <- function(mod=F){
+    d8.filter <- function(mod=FALSE){
       class <- "Daubechies"
       name <- "d8"
       L <- as.integer(8)
@@ -89,13 +89,17 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
              0.0328830116666778,
              -0.0105974017850021
              )
+      if(modwt == TRUE){
+        g <- g/sqrt(2)
+        transform <- "modwt"
+      } else transform <- "dwt"
       h <- wt.filter.qmf(g, inverse=TRUE)
       wt.filter <- new("wt.filter", L=L, h=h, g=g, wt.class=class,
                        wt.name=name, transform=transform)
       return(wt.filter)
     }
  
-    d10.filter <- function(mod=F){
+    d10.filter <- function(mod=FALSE){
       class <- "Daubechies"
       name <- "d10"
       L <- as.integer(10)
@@ -121,7 +125,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    d12.filter <- function(mod=F){ 
+    d12.filter <- function(mod=FALSE){ 
       class <- "Daubechies"
       name <- "d12"
       L <- as.integer(12)
@@ -149,7 +153,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    d14.filter <- function(mod=F){ 
+    d14.filter <- function(mod=FALSE){ 
       class <- "Daubechies"
       name <- "d14"
       L <- as.integer(14)
@@ -179,7 +183,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    d16.filter <- function(mod=F){
+    d16.filter <- function(mod=FALSE){
       class <- "Daubechies"
       name <- "d16"
       L <- as.integer(16)
@@ -211,7 +215,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    d18.filter <- function(mod=F){
+    d18.filter <- function(mod=FALSE){
       class <- "Daubechies"
       name <- "d18"
       L <- as.integer(18)
@@ -245,7 +249,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    d20.filter <- function(mod=F){
+    d20.filter <- function(mod=FALSE){
       class <- "Daubechies"
       name <- "d20"
       L <- as.integer(20)
@@ -281,7 +285,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    la8.filter <- function(mod=F){
+    la8.filter <- function(mod=FALSE){
       class <- "Least Asymmetric"
       name <- "la8"
       L <- as.integer(8)
@@ -305,7 +309,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    la10.filter <- function(mod=F){
+    la10.filter <- function(mod=FALSE){
       class <- "Least Asymmetric"
       name <- "la10"
       L <- as.integer(10)
@@ -331,7 +335,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    la12.filter <- function(mod=F){
+    la12.filter <- function(mod=FALSE){
       class <- "Least Asymmetric"
       name <- "la12"
       L <- as.integer(12)
@@ -359,7 +363,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    la14.filter <- function(mod=F){
+    la14.filter <- function(mod=FALSE){
       class <- "Least Asymmetric"
       name <- "la14"
       L <- as.integer(14)
@@ -389,7 +393,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    la16.filter <- function(mod=F){
+    la16.filter <- function(mod=FALSE){
       class <- "Least Asymmetric"
       name <- "la16"
       L <- as.integer(16)
@@ -421,7 +425,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    la18.filter <- function(mod=F){
+    la18.filter <- function(mod=FALSE){
       class <- "Least Asymmetric"
       name <- "la18"
       L <- as.integer(18)
@@ -455,7 +459,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    la20.filter <- function(mod=F){
+    la20.filter <- function(mod=FALSE){
       class <- "Least Asymmetric"
       name <- "la20"
       L <- as.integer(20)
@@ -491,7 +495,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    bl14.filter <- function(mod=F){
+    bl14.filter <- function(mod=FALSE){
       class <- "Best Localized"
       name <- "bl14"
       L <- as.integer(14)
@@ -521,7 +525,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    bl18.filter <- function(mod=F){
+    bl18.filter <- function(mod=FALSE){
       class <- "Best Localized"
       name <- "bl18"
       L <- as.integer(18)
@@ -555,7 +559,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    bl20.filter <- function(mod=F){
+    bl20.filter <- function(mod=FALSE){
       class <- "Best Localized"
       name <- "bl20"
       L <- as.integer(20)
@@ -591,7 +595,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    c6.filter <- function(mod=F){
+    c6.filter <- function(mod=FALSE){
       class <- "Coiflet"
       name <- "c6"
       L <- as.integer(6)
@@ -613,7 +617,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    c12.filter <- function(mod=F){
+    c12.filter <- function(mod=FALSE){
       class <- "Coiflet"
       name <- "c12"
       L <- as.integer(12)
@@ -641,7 +645,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    c18.filter <- function(mod=F){
+    c18.filter <- function(mod=FALSE){
       class <- "Coiflet"
       name <- "c18"
       L <- as.integer(18)
@@ -675,7 +679,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    c24.filter <- function(mod=F){
+    c24.filter <- function(mod=FALSE){
       class <- "Coiflet"
       name <- "c24"
       L <- as.integer(24)
@@ -715,7 +719,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
       return(wt.filter)
     }
 
-    c30.filter <- function(mod=F){
+    c30.filter <- function(mod=FALSE){
       class <- "Coiflet"
       name <- "c30"
       L <- as.integer(30)

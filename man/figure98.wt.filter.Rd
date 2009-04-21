@@ -6,7 +6,7 @@
 \description{
   Plots a DWT Wavelet or Scaling Filter for specific levels similar to
   Figure 98 in \emph{Wavelet Methods for Time Series Analysis} by
-    Percival and Walden (2000).}
+  Percival and Walden (2000).
 }
 \usage{
 figure98.wt.filter(filter, levels = NULL, wavelet = TRUE, y.normalize =
