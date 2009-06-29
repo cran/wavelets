@@ -26,7 +26,7 @@ modwt <- function(X, filter="la8", n.levels, boundary="periodic", fast=TRUE){
   class.X <- class(X)[1]
   attr.X <- attributes(X)
   if(is.null(attr.X)) attr.X <- list()
-  if(class.X == "mts") attributes(X)[3:4] <- NULL else X <- matrix(X)
+  if(class.X == "mts") attributes(X)[3:4] <- NULL else X <- as.matrix(X)
   dim.X <- dim(X)
   N <- dim(X)[1]
   n.series <- dim(X)[2]
