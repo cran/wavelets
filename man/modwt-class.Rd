@@ -1,4 +1,6 @@
-\name{modwt}
+\name{modwt-class}
+\Rdversion{1.1}
+\docType{class}
 \alias{modwt-class}
 \title{
   Maximal Overlap Discrete Wavelet Transform Object
@@ -54,3 +56,4 @@
 }
 \author{Eric Aldrich. ealdrich@gmail.com.}
 \keyword{ts}
+\keyword{classes}

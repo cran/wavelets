@@ -1,4 +1,6 @@
-\name{mra}
+\name{mra-class}
+\Rdversion{1.1}
+\docType{class}
 \alias{mra-class}
 \title{
   Multiresolution Analysis Object
@@ -42,3 +44,4 @@
 }
 \author{Eric Aldrich. ealdrich@gmail.com.}
 \keyword{ts}
+\keyword{classes}

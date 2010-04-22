@@ -1,4 +1,6 @@
-\name{wt.filter}
+\name{wt.filter-class}
+\Rdversion{1.1}
+\docType{class}
 \alias{wt.filter-class}
 \title{
   Wavelet Transform Filter Object
@@ -10,6 +12,7 @@
   \describe{
   \item{L}{An integer representing the length of the wavelet and scaling
     filters.}
+  \item{level}{An integer representing the level of the wavelet filter.}
   \item{h}{A numeric vector of wavelet filter coefficients.}
   \item{g}{A numeric vector of scaling filter coefficients.}
   \item{wt.class}{A character string indicating the class of the wavelet
@@ -44,3 +47,4 @@
 
 \author{Eric Aldrich. ealdrich@gmail.com.}
 \keyword{ts}
+\keyword{classes}

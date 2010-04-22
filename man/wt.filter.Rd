@@ -9,7 +9,7 @@
   Generates a wavelet transform filter.
 }
 \usage{
-wt.filter(filter="la8", modwt=FALSE)
+wt.filter(filter="la8", modwt=FALSE, level=1)
 }
 \arguments{
   \item{filter}{A character string indicating which wavelet transform
@@ -18,6 +18,8 @@ wt.filter(filter="la8", modwt=FALSE)
     vector is supplied, the length must be even.}
   \item{modwt}{A logical value indicating whether to compute the
     maximal overlap discrete wavelet transform filter.}
+  \item{level}{An integer value indicating the level of the wavelet
+    filter to compute.}
 }
 \details{
   The character strings currently supported are derived from one of four

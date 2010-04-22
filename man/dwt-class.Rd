@@ -1,4 +1,6 @@
-\name{dwt}
+\name{dwt-class}
+\Rdversion{1.1}
+\docType{class}
 \alias{dwt-class}
 \title{
   Discrete Wavelet Transform Object
@@ -53,3 +55,4 @@
 }
 \author{Eric Aldrich. ealdrich@gmail.com.}
 \keyword{ts}
+\keyword{classes}
