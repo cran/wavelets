@@ -767,6 +767,7 @@ wt.filter <- function(filter="la8", modwt=FALSE, level=1){
 
     wt.filter <- switch(filter,
                         haar=haar.filter(),
+                        d2=haar.filter(),
                         d4=d4.filter(),
                         d6=d6.filter(),
                         d8=d8.filter(),
