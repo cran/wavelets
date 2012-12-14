@@ -1,6 +1,6 @@
 Package: wavelets
-Version: 0.2-8
-Date: 2012-09-05
+Version: 0.2-9
+Date: 2012-12-14
 Title: A package of functions for computing wavelet filters, wavelet
         transforms and multiresolution analyses
 Author: Eric Aldrich <ealdrich@gmail.com>
@@ -15,6 +15,6 @@ Description: This package contains functions for computing and plotting
 LazyLoad: yes
 License: GPL (>= 2)
 URL: http://www.r-project.org
-Packaged: 2012-09-05 16:24:33 UTC; eric
+Packaged: 2012-12-14 23:22:13 UTC; ealdrich
 Repository: CRAN
-Date/Publication: 2012-09-05 16:32:31
+Date/Publication: 2012-12-15 07:25:03
