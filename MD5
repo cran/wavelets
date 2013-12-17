@@ -1,4 +1,4 @@
-d23262bdfebbb4d9d02ee980878effe4 *DESCRIPTION
+5c0180b659d9158dced04321ccd1cc4a *DESCRIPTION
 ba9917d075ed18728c70733ec352c616 *NAMESPACE
 df82cbb94ee16443659f13dd9c2fa8ec *R/align.R
 cef86ca3bf214f955278278f76e5f5ae *R/classdef.R
@@ -16,7 +16,7 @@ d06e7915ad84945b27defeaaab96d845 *R/imodwt.R
 d4f164223abeafb838ebff7c2df83389 *R/mra.R
 559f1e2cf84a93f8ee1577bebeea7850 *R/plot.dwt.R
 2dd4b37f7ebde9e6407873731c1fa608 *R/plot.dwt.multiple.R
-314cda5d6b884aa7afd4fae46f542e53 *R/plot.modwt.R
+32b893e2f3ad437035e533d3360c069b *R/plot.modwt.R
 56d72f526ecaf56fed7a1c51ea33f6ce *R/print.dwt.R
 68db187967708a4761aadd74de3d7cc4 *R/print.modwt.R
 21a6cfa6c831e4b87a994cc2049003df *R/print.wt.filter.R

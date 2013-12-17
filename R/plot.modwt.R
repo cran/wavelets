@@ -235,7 +235,7 @@ plot.modwt <- function( x , levels = NULL, draw.boundary = FALSE,
     levelshift.modwt <- function(level, shift)
     {
         if(shift != 0) {
-            level <- c(level[(shift+1):length(level)], level[1:shift])
+            level <- c(level[(round(shift)+1):length(level)], level[1:round(shift)])
         }
 
         level
