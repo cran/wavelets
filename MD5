@@ -1,5 +1,5 @@
-5c0180b659d9158dced04321ccd1cc4a *DESCRIPTION
-ba9917d075ed18728c70733ec352c616 *NAMESPACE
+707717597fa4c8c8dfeabff76c25dadb *DESCRIPTION
+12be6dcefcd71f3641faed5d71c19ab4 *NAMESPACE
 df82cbb94ee16443659f13dd9c2fa8ec *R/align.R
 cef86ca3bf214f955278278f76e5f5ae *R/classdef.R
 cb5510caafd35b51cb8a6378f475d948 *R/dwt.R
@@ -31,10 +31,10 @@ b4cc90717214927a527bc9e807b9b192 *R/waveletshift.dwt.R
 9d0f2177a980843905f316fef08d11dc *R/wt.filter.equivalent.R
 7a7569b3ee25c5e8f4e3dcdd0b224fb5 *R/wt.filter.qmf.R
 fcd8e885de32e95ce77632e433833135 *R/wt.filter.shift.R
-672539275abedb10364e1eb617731c6a *data/ecg.RData
-2f46457885096ab9589fba8e1b0c72c4 *data/nile.RData
-29eca857ec4552bfa3740e4991ef0fcb *data/ocean.RData
-e514bc8d8ab1344875a0a57592c40f5d *data/subtidal.RData
+2f61fd9e2079c4630e79d2eab88acd53 *data/ecg.RData
+408c7363548367591d0421fddf4e0f3b *data/nile.RData
+04ecac6e658722673ead2742895b6ace *data/ocean.RData
+bd5e2623869899d294fec7610c3fbdcf *data/subtidal.RData
 af02a12057fe154590028d1361ccb603 *man/align.Rd
 f61a12291dd9c06f9631d6306d81de9e *man/dwt-class.Rd
 ff791cc4f4b26526bc2ad09f5f544134 *man/dwt.Rd

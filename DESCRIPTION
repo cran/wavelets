@@ -1,12 +1,12 @@
 Package: wavelets
-Version: 0.3-0
+Version: 0.3-0.1
 Date: 2013-12-17
-Title: A package of functions for computing wavelet filters, wavelet
-        transforms and multiresolution analyses
+Title: Functions for Computing Wavelet Filters, Wavelet Transforms and
+        Multiresolution Analyses
 Author: Eric Aldrich <ealdrich@gmail.com>
 Maintainer: Eric Aldrich <ealdrich@gmail.com>
-Depends: R (>= 2.0.0), methods
-Description: This package contains functions for computing and plotting
+Depends: R (>= 2.10), methods
+Description: Contains functions for computing and plotting
         discrete wavelet transforms (DWT) and maximal overlap discrete
         wavelet transforms (MODWT), as well as their inverses.
         Additionally, it contains functionality for computing and
@@ -14,7 +14,7 @@ Description: This package contains functions for computing and plotting
         decompositions as well as multiresolution analyses.
 LazyLoad: yes
 License: GPL (>= 2)
-Packaged: 2013-12-18 07:21:19 UTC; ealdrich
+Packaged: 2019-01-27 16:06:23 UTC; hornik
 NeedsCompilation: yes
 Repository: CRAN
-Date/Publication: 2013-12-18 09:12:14
+Date/Publication: 2019-01-27 16:12:41 UTC

@@ -10,3 +10,16 @@ exportPattern(".")
 import(
   methods
 )
+
+importFrom("graphics", "abline", "axTicks", "axis", "layout", "lines",
+           "mtext", "par", "plot", "points", "segments", "text")
+importFrom("stats", "end", "fft", "start")
+
+S3method(plot, dwt)
+S3method(plot, modwt)
+S3method(print, dwt)
+S3method(print, modwt)
+S3method(print, wt.filter)
+S3method(summary, dwt)
+S3method(summary, modwt)
+S3method(summary, wt.filter)
