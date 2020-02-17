@@ -1,7 +1,7 @@
 extend.series <- function(X, method="reflection", length="double", n, j){
 
   # error checking
-  if(is.na(match(class(X), c("numeric", "ts", "matrix", "data.frame"))))
+  if(is.na(match(class(X)[1], c("numeric", "ts", "matrix", "data.frame"))))
      stop("Invalid argument: 'X' must be of class 'numeric','ts', 'matrix', or 'data.frame'.")
   if(is.na(match(method, c("periodic","reflection","zeros","mean","reflection.inverse"))))
     stop("Invalid argument value for 'method'")
@@ -17,7 +17,7 @@ extend.series <- function(X, method="reflection", length="double", n, j){
   }
   
   # store the old class for output
-  class.X <- class(X)
+  class.X <- class(X)[1]
   if(class.X != "matrix"){
     attr.X <- attributes(X)
     X <- as.matrix(X)

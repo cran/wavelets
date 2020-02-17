@@ -1,11 +1,11 @@
-707717597fa4c8c8dfeabff76c25dadb *DESCRIPTION
+58f74e8fb04d80855caa9b033cc140d1 *DESCRIPTION
 12be6dcefcd71f3641faed5d71c19ab4 *NAMESPACE
 df82cbb94ee16443659f13dd9c2fa8ec *R/align.R
 cef86ca3bf214f955278278f76e5f5ae *R/classdef.R
 cb5510caafd35b51cb8a6378f475d948 *R/dwt.R
 d7e1f051cd7d299284350cc75b965eed *R/dwt.backward.R
 c1feb70f1c6420e6e0d3691c8422e5af *R/dwt.forward.R
-048337b46db0e0b63a6872cffae24f95 *R/extend.series.R
+14be80c7b2d5bcca380f6bf761e42ad5 *R/extend.series.R
 48a13e6cff42ab3703f4e244fddde579 *R/figure108.wt.filter.R
 e9e7af9d0c112e8bd126b069e1789bff *R/figure98.wt.filter.R
 b1f1dc9530fc6509e97046acece7259b *R/idwt.R
